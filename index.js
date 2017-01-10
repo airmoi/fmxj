@@ -1,2 +1,2 @@
-require('./lib/fmxj');
+require('./lib/fmxj.js');
 module.exports = window.fmxj;
