@@ -4,7 +4,7 @@
   "description": "A Javascript based approach to FileMaker Custom Web Publishing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -13,9 +13,7 @@
   "keywords": [
     "FileMaker",
     "Node",
-    "Custom",
-    "Web",
-    "Publishing"
+    "Custom Web Publishing"
   ],
   "author": "Romain Dunand <airmoi@gmail.com>",
   "license": "MIT",
