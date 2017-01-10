@@ -16,6 +16,8 @@ fmxj.js is designed to do the data interchange work with FileMaker Server in Jav
 
 POSTS can be done directly to the FileMaker Server's XML WPE or a simple PHP relay can be used to get around cross-domain issues and provide more secure authentication options.  With the goal of doing as little as possible on the Server, we were a little disappointed to need to rely on PHP at all, but there are some limitations to interacting with the FMS XML API directly, and a PHP relay is the simplest way to get around them.  Specifically it's much easier to add access headers to a PHP page than it is to Apache! See more on the PHP relay below in the **postQueryFMS()** function.
 
+For IE browsers < 10, you'll need to include <a href="https://github.com/davidchambers/Base64.js" target="_blank">Base64 polyfill</a> to use XML CWP authentication
+
 ##Functions for working with FileMaker Server
 The **postQueryFMS()** is the primary function used for POSTing queries to FileMaker Server via httpXMLRequest and then converting the FMPXMLRESULT xml results into JavaScript objects for callback.  Queries can be created easily from JavaScript objects using the  fmxj URL functions below.
 
